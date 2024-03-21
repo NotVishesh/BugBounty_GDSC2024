@@ -36,7 +36,7 @@ html {
   bottom: 0;
   left: -60px;
   right: 0;
-  animation: noise 9s linear infinite;
+  animation: noise 2s linear infinite;
   overflow: default;
 }
 
@@ -57,7 +57,7 @@ html {
   right: 0;
   opacity: 0;
   color: blue;
-  animation: noise-1 9s linear infinite;
+  animation: noise-1 2s linear infinite;
 }
 
 .info {
@@ -75,7 +75,7 @@ html {
   bottom: 0;
   left: 0;
   right: 0;
-  animation: noise-3 9s linear infinite;
+  animation: noise-3 2s linear infinite;
 }
 
 .error:before {
@@ -95,7 +95,7 @@ html {
   right: 0;
   opacity: 0;
   color: red;
-  animation: noise-2 9s linear infinite;
+  animation: noise-2 0.5s linear infinite;
 }
 
 @keyframes noise-1 {
