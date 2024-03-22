@@ -8,6 +8,9 @@ body {
   height: 100vh;
   background: linear-gradient(#000000 50%, #ffb92a 50%);
 }
+li{
+  cursor: pointer;
+}
 .container {
   font-size: 16px;
   width: 90vw;
@@ -136,7 +139,7 @@ p {
   top: 20px;
   left: 20px;
   transition: background 750ms ease-in-out;
-  user-select: none;
+  /* user-select: none; */
 }
 
 .menu-open #menu-button {
@@ -207,7 +210,7 @@ nav {
   left: 0;
   width: 260px;
   bottom: 0;
-  z-index: -1;
+  z-index: 1;
   pointer-events: none;
 }
 

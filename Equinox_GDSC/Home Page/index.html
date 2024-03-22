@@ -48,7 +48,27 @@
   <script src="key.js"></script>
   <script src="script.js"></script>
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    function route(event) {
+      event.preventDefault();
+      var url = event.target.getAttribute('href');
+      if (url == '/toprated') {
+        window.location.href = 'https://www.imdb.com/chart/top/';
+      }
+      else if (url == '/Home/gdsciiitl') {
+        window.location.href = 'https://www.instagram.com/gdsciiitl/';
+      }
+      else if (url == '/') {
+        window.location.href = '#';
+      }
+      else if (url == '/Home/devteam') {
+        window.location.href = '../dev_team/index.html';
+      }
+      else {
+        window.location.href = '../Error/404.html'
+      }
+    }
+
+      document.addEventListener("DOMContentLoaded", function () {
       var menuButton = document.getElementById("menu-button");
       menuButton.addEventListener("click", function () {
         document.body.classList.toggle("menu-open");
